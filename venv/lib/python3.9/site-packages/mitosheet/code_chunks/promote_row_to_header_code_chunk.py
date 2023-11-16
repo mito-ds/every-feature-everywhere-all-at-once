@@ -1,0 +1,47 @@
+
+#!/usr/bin/env python
+# coding: utf-8
+
+# Copyright (c) Saga Inc.
+# Distributed under the terms of the GPL License.
+from typing import Any, Dict, List, Optional, Tuple
+
+from mitosheet.code_chunks.code_chunk import CodeChunk
+from mitosheet.state import State
+from mitosheet.transpiler.transpile_utils import \
+    get_column_header_as_transpiled_code
+from mitosheet.types import ColumnID
+
+
+class PromoteRowToHeaderCodeChunk(CodeChunk):
+
+    def __init__(self, prev_state: State, sheet_index: int, index: Any):
+        super().__init__(prev_state)
+        self.sheet_index = sheet_index
+        self.index = index
+
+        self.df_name = self.prev_state.df_names[self.sheet_index]
+
+
+    def get_display_name(self) -> str:
+        return 'Promote Row To Header'
+    
+    def get_description_comment(self) -> str:
+
+        return f"Promoted row {self.index} to header in {self.df_name}"
+        
+    def get_code(self) -> Tuple[List[str], List[str]]:
+        transpiled_index = get_column_header_as_transpiled_code(self.index)
+
+        code = [f"{self.df_name}.columns = {self.df_name}.loc[{transpiled_index}]"]
+
+        code.append(f"{self.df_name}.columns = deduplicate_column_headers({self.df_name}.columns.tolist())")
+
+        code.append(f"{self.df_name}.drop(labels=[{transpiled_index}], inplace=True)")
+        
+
+        return code, []
+    
+    def get_edited_sheet_indexes(self) -> List[int]:
+        return [self.sheet_index]
+    

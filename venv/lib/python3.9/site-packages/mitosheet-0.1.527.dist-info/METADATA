@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: mitosheet
+Version: 0.1.527
+Summary: The Mito Spreadsheet
+Home-page: https://trymito.io
+Author: Mito Sheet
+Author-email: naterush1997@gmail.com
+License: GNU Affero General Public License v3
+Keywords: Jupyter,JupyterLab,JupyterLab3
+Platform: Linux
+Platform: Mac OS X
+Platform: Windows
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Framework :: Jupyter
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: jupyterlab ~=3.0
+Requires-Dist: pandas >=0.24.2
+Requires-Dist: analytics-python
+Requires-Dist: plotly >=4.14.3
+Requires-Dist: chardet >=3.0.4
+Requires-Dist: openpyxl
+Requires-Dist: xlsxwriter <=3.1.3,>=0.6.9
+Provides-Extra: deploy
+Requires-Dist: wheel ; extra == 'deploy'
+Requires-Dist: twine ; extra == 'deploy'
+Requires-Dist: setuptools ==56.0.0 ; extra == 'deploy'
+Provides-Extra: optional_feature_dependencies
+Requires-Dist: streamlit >=1.24 ; extra == 'optional_feature_dependencies'
+Requires-Dist: dash >=2.9 ; extra == 'optional_feature_dependencies'
+Requires-Dist: snowflake-connector-python[pandas] ; (python_version >= "3.7") and extra == 'optional_feature_dependencies'
+Provides-Extra: streamlit
+Requires-Dist: streamlit >=1.24 ; extra == 'streamlit'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: flake8 ; extra == 'test'
+Requires-Dist: types-chardet ; extra == 'test'
+Requires-Dist: types-requests ; extra == 'test'
+Requires-Dist: mypy ; extra == 'test'
+Requires-Dist: pytest-httpserver ; extra == 'test'
+
+
+To learn more about Mito, checkout out our documentation: https://docs.trymito.io/getting-started/installing-mito
+
+
+Before installing Mito 
+
+
+1. Check that you have Python 3.6 or above. To check your version of Python, open a new terminal, and type python3 --version. If you need to install or update Python, restart your terminal after doing so.
+
+
+2. Checkout our terms of service and privacy policy. By installing Mito, you're agreeing to both of them. Please contact us at aaron [@] sagacollab [dot] com with any questions.
+
+
+Installation Instructions 
+
+
+For more detailed installation instructions, see our documentation: https://docs.trymito.io/getting-started/installing-mito
+
+
+1. pip install mitosheet
+
+
+2. Launch JupyterLab 3.0 and open a new notebook
+
+
+3. In the notebook, run the following code:
+
+
+import mitosheet
+
+
+mitosheet.sheet()
+
+
+
+

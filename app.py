@@ -80,11 +80,11 @@ with consume_tab:
 
         # For imports that are exports, display a text input
         if param['subtype'] in ['file_name_export_excel', 'file_name_export_csv']:
-            new_param = st.text_input(param['name'], value=param['initial_value'])
+            new_param = st.text_input(param['original_value'], value=param['initial_value'])
             
         # For imports that are file imports, display a file uploader
         elif param['subtype'] in ['file_name_import_excel', 'file_name_import_csv']:
-            new_param = st.file_uploader(param['name'])
+            new_param = st.file_uploader(f"Select a new file to replace: **{param['original_value'].split('/')[-1]}**")
         
         if new_param is not None:
             updated_metadata[param['name']] = new_param

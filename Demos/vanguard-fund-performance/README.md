@@ -1,4 +1,4 @@
-# vanguard-enterprise instructions
+# vanguard-fund-performance
 
 #### Demo Overview
 This demo shows how to use a variety of Mito's enterprise features to automate a standard report. Features include:
@@ -15,6 +15,11 @@ This demo shows how to use a variety of Mito's enterprise features to automate a
 You're a performance analyst at Vanguard. Your manager asked you to analyze the performance of each fund manager for each fund they are in charge of. 
 
 ### Streamlit Demo Instructions 
+
+### Launch the Streamlit app
+This demo can be run with the `automation-app.py` Streamlit app. To launch the app, run the following commands:
+
+```streamlit run automation-app.py```
 
 #### Create automation
 1. Import `fund_info.csv`

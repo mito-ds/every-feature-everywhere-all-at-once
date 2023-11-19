@@ -11,7 +11,6 @@ from custom_importers import get_performance_data
 # Set the streamlit page to wide so you can see the whole spreadsheet
 st.set_page_config(layout="wide")
 
-
 st.title("Automation Builder")
 st.markdown("""Need to build a new data automation? This app makes it easy
 
@@ -46,7 +45,6 @@ with create_tab:
             """)
             with st.expander("View Generated Python Code", expanded=False):
                 st.code(analysis.fully_parameterized_function)
-
 
 with consume_tab:
 

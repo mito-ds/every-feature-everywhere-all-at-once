@@ -19,7 +19,7 @@ Note that we don't create a separate Streamlit app for each demo so we can easil
 1. Clone this repo
 2. Create a virtual environment
 ```
-python3 -m venv mito-demo
+python -m venv mito-demo
 ```
 3. Activate the virtual environment (windows)
 ```

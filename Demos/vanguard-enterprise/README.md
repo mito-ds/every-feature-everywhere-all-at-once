@@ -1,7 +1,7 @@
 # vanguard-enterprise instructions
 
 #### Demo Overview
-This demo shows how to use a variety of Mito's enterprise features to build a repeatable analysis. Features include:
+This demo shows how to use a variety of Mito's enterprise features to automate a standard report. Features include:
 - CSV Imports
 - Custom Imports (Enterprise)
 - VLOOKUP 

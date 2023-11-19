@@ -18,7 +18,7 @@ You're a performance analyst at Vanguard. Your manager asked you to analyze the 
 
 #### Create automation
 1. Import `fund_info.csv`
-2. Use custom imports to import `fund performance` for 2023. Use a fake username and password.
+2. Use custom imports to import `fund performance` for 2022. Use a fake username and password.
 3. Use Vlookup to add the Portfolio Manager from the fund_info dataframe into the performance dataframe
 4. Notice that some of the funds have multiple portfolio managers. Use the `Separate Row On Delimiter` custom edit to split the portfolio managers into separate rows on the delimiter `, `.
 5. Use the `GET_EMAIL` custom sheet function to get the email of each fund manager
@@ -35,12 +35,11 @@ You're a performance analyst at Vanguard. Your manager asked you to analyze the 
 4. Click `rerun`
 5. Show the rebuilt analysis, voila! 
 
-
 ### Jupyter Demo Instructions 
 
 #### Create automation
 1. Import `fund_info.csv`
-2. Use custom imports to import `fund performance` for 2023. Use a fake username and password.
+2. Use custom imports to import `fund performance` for 2022. Use a fake username and password.
 3. Use Vlookup to add the Portfolio Manager from the fund_info dataframe into the performance dataframe
 4. Notice that some of the funds have multiple portfolio managers. Use the `Separate Row On Delimiter` custom edit to split the portfolio managers into separate rows on the delimiter `, `.
 5. Use the `GET_EMAIL` custom sheet function to get the email of each fund manager
@@ -57,7 +56,7 @@ You're a performance analyst at Vanguard. Your manager asked you to analyze the 
 
 #### Reuse automation
 1. Open the `change imported files` taskpane
-    - Update the custom import conifguration to look at 2022
+    - Update the custom import conifguration to look at 2021
 2. Rerun the analysis 
 3. Show the updated Mitosheet 
 4. Run the generated code

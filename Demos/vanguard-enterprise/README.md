@@ -48,8 +48,8 @@ You're a performance analyst at Vanguard. Your manager asked you to analyze the 
     - Columns: Date (Grouped by Month)
     - Values: sum of MoM Return
 7. Add conditional formatting
-    - <0, highlight in red
-    - >0, highlight in green
+    - less than 0, highlight in red
+    - greater than 0, highlight in green
 8. Generate code to create Excel file with formatting
 9. Run code to generate Excel file
 10. Open Excel file and show formatting

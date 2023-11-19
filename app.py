@@ -28,7 +28,7 @@ with create_tab:
 
     # Create an empty spreadsheet
     analysis: RunnableAnalysis = spreadsheet(
-        import_folder='./data',
+        import_folder='./Demos',
         return_type='analysis',
         sheet_functions=[CHECK, GET_EMAIL],
         importers=[get_performance_data],
@@ -95,7 +95,7 @@ with consume_tab:
         result = analysis.run(**updated_metadata)
         spreadsheet(
             *result,
-            import_folder='./data',
+            import_folder='./Demos',
             return_type='analysis',
             sheet_functions=[CHECK, GET_EMAIL],
             importers=[get_performance_data],

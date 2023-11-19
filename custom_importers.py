@@ -6,7 +6,7 @@ def get_performance_data(username: str, password: str, year: int):
 
     The data returned by this function is an edited version of this data: https://www.kaggle.com/datasets/callumrafter/vanguard-investor-fund-data?select=performance.csv
     """
-    performance = pd.read_csv('db_data/performance.csv')
+    performance = pd.read_csv('Demos/vanguard-enterprise/performance.csv')
     
     # Changed Date to dtype datetime
     performance['Date'] = pd.to_datetime(performance['Date'], infer_datetime_format=True, errors='coerce')

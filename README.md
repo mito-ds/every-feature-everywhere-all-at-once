@@ -13,3 +13,24 @@ Note that we don't create a separate Streamlit app for each demo so we can easil
 - [Data Ontology Verification](Demos/data-ontology-verification): Use Mito to verify that data conforms to a required schema. One scenario uses Mito open source features and another uses Mito enterprise features.
 - [Vanguard Fund Performance](Demos/vanguard-fund-performance): Use Mito automate the creation of a formatted Excel file using Mito enterprise features. 
 
+
+### How to run these demos locally?
+
+1. Clone this repo
+2. Create a virtual environment
+```
+python3 -m venv mito-demo
+```
+3. Activate the virtual environment (windows)
+```
+mito-demo\Scripts\activate.bat
+```
+4. Activate the virtual environment (mac)
+```
+source mito-demo/bin/activate
+```
+5. Install the requirements
+```
+pip install -r requirements.txt
+```
+6. Navigate to the demo you want to run in the [Demos](Demos) folder and follow the instructions in the README.md file

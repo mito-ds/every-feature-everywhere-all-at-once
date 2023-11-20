@@ -1,4 +1,4 @@
-# Everything Bagel
+# Every Feature Everywhere All at Once
 
 > I got bored one day and put all of Mito's features in one demo
 

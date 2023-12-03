@@ -50,7 +50,7 @@ This demo can be run with the `automation-app.py` Streamlit app. To launch the a
 5. Use the `GET_EMAIL` custom sheet function to get the email of each fund manager
 6. Create a pivot table with the configuration below:
     - Rows: Fund Manager, Email, Fund
-    - Columns: Date (Grouped by Month)
+    - Columns: Date (Grouped by **Month**)
     - Values: sum of MoM Return
 7. Add conditional formatting
     - less than 0, highlight in red

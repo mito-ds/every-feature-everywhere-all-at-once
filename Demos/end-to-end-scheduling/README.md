@@ -1,7 +1,7 @@
 # Scheduling Demo
 
 #### Demo Overview
-This demo shows how to use Mito's scheduling functionality. The mean feature meant to be demonstrated is the scheduling functionality, so the core functionality on display is meant to be simple.
+This demo shows how to use Mito's scheduling functionality. Because this demo is intended to demonstrate Mito's scheduling functionality, the rest of the Mito workflow is simple. 
 
 - Import a CSV
 - Create a pivot table
@@ -10,7 +10,7 @@ This demo shows how to use Mito's scheduling functionality. The mean feature mea
 - Schedule the resulting report
 
 #### Scenario
-You're a performance analyst at Vanguard. Your manager asked you to create a formatted pivot table for that has the average performance of each fund
+You're a performance analyst at Vanguard. Your manager asked you to create a formatted pivot table that has the average performance of each fund
 
 ### JupyterLab Demo Instructions 
 

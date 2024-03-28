@@ -16,7 +16,7 @@ You're a performance analyst at Vanguard. Your manager asked you to analyze the 
 
 ### Streamlit Demo Instructions 
 
-### Launch the Streamlit app
+#### Launch the Streamlit app
 This demo can be run with the `automation-app.py` Streamlit app. To launch the app, run the following commands:
 
 ```streamlit run automation-app.py```
@@ -66,3 +66,14 @@ This demo can be run with the `automation-app.py` Streamlit app. To launch the a
 3. Show the updated Mitosheet 
 4. Run the generated code
 5. Show the new formatted Excel file, voila! 
+
+### Dash Demo Instructions 
+
+#### Launch the Streamlit app
+This demo can be run with the `dash_app.py` Streamlit app. To launch the app, run the following commands:
+
+```python -m dash_app.py```
+
+#### Creation Automation
+Instructions coming soon. Dash App already created.
+

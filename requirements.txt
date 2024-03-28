@@ -1,4 +1,4 @@
 mitosheet
 mitosheet_helper_enterprise
-streamlit
+streamlit==1.31.0
 dash

@@ -88,9 +88,11 @@ with consume_tab:
             updated_metadata[param['name']] = new_param
 
     # Show a button to trigger re-running the analysis with the updated_metadata
-    run = st.button('Run')
-    if run:
+
+    if len(updated_metadata) == len(analysis.get_param_metadata()):
+        st.success("Ran the automation")
         result = analysis.run(**updated_metadata)
+        print(result)
         spreadsheet(
             *result,
             import_folder='./Demos',
